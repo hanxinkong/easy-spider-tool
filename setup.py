@@ -30,7 +30,7 @@ if __name__ == '__main__':
         long_description_content_type="text/markdown",  # 指定包文档格式为markdown
         author="hanxinkong",  # 作者相关信息
         author_email='xinkonghan@gmail.com',
-        url='https://easy_spider_tool.xink.top/',
+        url='https://easy-spider-tool.xink.top/',
         # 指定包信息，还可以用find_packages()函数
         packages=find_packages(),
         # package_data={
@@ -49,8 +49,8 @@ if __name__ == '__main__':
         # classifiers=[
         #
         # ],
-        script_name="setup.py",
-        script_args="sdist bdist_wheel upload -r local".split(" "),
+        # script_name="setup.py",
+        # script_args="sdist bdist_wheel upload -r local".split(" "),
     )
 
 # python setup.py sdist bdist_wheel upload -r local
