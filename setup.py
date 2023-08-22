@@ -40,6 +40,9 @@ if __name__ == '__main__':
         # include_package_data=True,
         license="MIT",
         keywords=['easy', 'spider', 'tool'],
+        extras_require={
+            'document': ['easy-spider-tool-document'],  # 定义额外功能所需的依赖包
+        },
         # 指定包的控制台脚本或其他入口点
         # entry_points={
         #     'console_scripts': [
