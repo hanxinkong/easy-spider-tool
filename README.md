@@ -67,9 +67,9 @@ print(format_json(all_user_info))
 
 ## 链接
 
-Github：https://github.com/hanxinkong/easy_spider_tool
+Github：https://github.com/hanxinkong/easy-spider-tool
 
-在线文档：https://easy_spider_tool.xink.top/
+在线文档：https://easy-spider-tool.xink.top/
 
 ## 注明
 

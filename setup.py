@@ -31,26 +31,8 @@ if __name__ == '__main__':
         author="hanxinkong",  # 作者相关信息
         author_email='xinkonghan@gmail.com',
         url='https://easy-spider-tool.xink.top/',
-        # 指定包信息，还可以用find_packages()函数
         packages=find_packages(),
-        # package_data={
-        #     'lego': ['shell/*', 'static/*', 'templates/*']
-        # },  # 读取需要的数据文件
         install_requires=read_requirements('requirements.txt'),  # 指定需要安装的依赖
-        # include_package_data=True,
         license="MIT",
         keywords=['easy', 'spider', 'tool'],
-        # 指定包的控制台脚本或其他入口点
-        # entry_points={
-        #     'console_scripts': [
-        #         'lego=lego.script:main'
-        #     ]
-        # },
-        # classifiers=[
-        #
-        # ],
-        # script_name="setup.py",
-        # script_args="sdist bdist_wheel upload -r local".split(" "),
     )
-
-# python setup.py sdist bdist_wheel upload -r local
