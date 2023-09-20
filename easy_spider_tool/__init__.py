@@ -6,4 +6,4 @@ from .verify import verify_ip_address, verify_domain_name, verify_port, verify_u
 from .data import cookie_to_dic, clear_value
 from .decorator import retry
 
-__version__ = "1.0.08"
+__version__ = "1.0.09"
