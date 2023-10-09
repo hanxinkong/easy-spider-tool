@@ -223,12 +223,15 @@ def format_date(obj: datetime.now, scheme: str = None) -> str:
     return obj.strftime(scheme)
 
 
-def current_date(is_fmt: bool = True, scheme: str = None) -> FmtDate:
+def current_date(is_fmt: bool = True, scheme: str = None, default_time_scheme: Optional[str] = '00:00:00') -> FmtDate:
     """当前时间对象，默认为格式化标准文本时间格式"""
     cur_time = datetime.now()
+
+    if default_time_scheme:
+        scheme = f'%Y-%m-%d {default_time_scheme}'
+
     if is_fmt:
         cur_time = format_date(obj=cur_time, scheme=scheme)
-
     return cur_time
 
 
