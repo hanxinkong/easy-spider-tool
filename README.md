@@ -24,8 +24,8 @@ pip install easy_spider_tool
 - `hash摘要相关`
     - `md5` 字符经md5编码
 - `正则匹配相关`
-    - `regx_match` 单个条件匹配（支持设置默认值，选取首个匹配值）
-    - `for_to_regx_match` 多个不相关条件匹配（支持设置默认值，选取首个匹配值，最新版已废弃，整合到regx_match）
+    - `regex_match` 条件匹配（支持多个不相关条件匹配,支持设置默认值，选取首个匹配值）
+    - `for_to_regx_match` 多个不相关条件匹配（兼容老版本保留）
 - `数据清洗/转换相关`
     - `cookie_to_dic` cookie转换为字典（Dict）格式
     - `clear_value` 清除列表（List）或字典（Dict）中的指定值（递归清除所有嵌套字典和列表中的指定值）

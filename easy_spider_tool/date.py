@@ -183,7 +183,10 @@ def date_parse(obj: FmtDate, is_fmt: bool = True, scheme: str = None, select: Op
 
     assert obj, 'Time format error'
 
-    obj_date = dateparser.parse(obj)
+    if isinstance(obj, str):
+        obj_date = dateparser.parse(obj)
+    else:
+        obj_date = obj
 
     if timezone:
         obj_date = timezone_(obj, is_fmt=False, timezone=timezone)
@@ -223,24 +226,13 @@ def format_date(obj: datetime.now, scheme: str = None) -> str:
     return obj.strftime(scheme)
 
 
-def current_date(is_fmt: bool = True, scheme: str = None, default_time_scheme: Optional[str] = '00:00:00') -> FmtDate:
+def current_date(is_fmt: bool = True, scheme: str = None) -> FmtDate:
     """当前时间对象，默认为格式化标准文本时间格式"""
     cur_time = datetime.now()
-
-    if default_time_scheme:
-        scheme = f'%Y-%m-%d {default_time_scheme}'
 
     if is_fmt:
         cur_time = format_date(obj=cur_time, scheme=scheme)
     return cur_time
-
-
-# def date_parse(obj: str, src_scheme: str = default_fmt_scheme, is_fmt: bool = True, scheme: str = None) -> FmtDate:
-#     """文字时间解析成datetime对象，可选再次格式化"""
-#     obj_date = datetime.strptime(obj, src_scheme)
-#     if is_fmt:
-#         obj_date = format_date(obj=obj_date, scheme=scheme)
-#     return obj_date
 
 
 def timestamp(ms: bool = False) -> int:
