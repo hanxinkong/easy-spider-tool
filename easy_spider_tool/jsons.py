@@ -44,7 +44,7 @@ def jsonpath(src_data: Union[Dict, List], expr: Union[str, List[str]], default: 
     for i in expr:
         values = super_jsonpath(src_data, i)
         # 处理值本身为None的情况
-        if isinstance(values, list) and not list(filter(None, values)):
+        if isinstance(values, list) and not list(filter(lambda x: x is not None, values)):
             values = False
 
         if values:
