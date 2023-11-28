@@ -50,7 +50,7 @@ def jsonpath(src_data: Union[Dict, List], expr: Union[str, List[str]], default: 
         if values:
             break
 
-    if values is False:
+    if values is False or len(expr) == 0:
         return default
 
     if first is True:
