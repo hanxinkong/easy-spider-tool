@@ -62,8 +62,9 @@ def jsonpath(src_data: Union[Dict, List], expr: Union[str, List[str]], default: 
 def is_format_json(wait_json_string: str) -> bool:
     # noinspection PyBroadException
     try:
-        json.loads(wait_json_string)
-        return True
-    except Exception as _:
+        data = json.loads(wait_json_string)
+        if isinstance(data, dict):
+            return True
+    except json.JSONDecodeError:
         pass
     return False

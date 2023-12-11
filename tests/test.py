@@ -21,11 +21,16 @@ if __name__ == '__main__':
     # cookie = 'auth_token=ff8ea324a1b6d97bf05ee724e1f8f7b1f6968e2d; ct0=0d10adb132334979e412da21c9f2e071858296b6949e60208a39c0d2e5410484e4630075f47f793f1cd7783a4a8d25bd5950ffc526f5bc4e9b88cba725aa57277a0d49d081b3c368e9c4c00ed421abf0'
     # data = cookie_to_dic(cookie)
 
+    data = {'page_limit': 30, 'data_type': 'information', 'time_interval': 'all',
+            'options': {'key_word': '联通', 'drill_down_count': -1, 'comment_count': -1, 'time_interval': None,
+                        'task_id': '联通', 'data_type': 'information'}, 'total_count': 0, 'min_time': 0,
+            'max_time': 1701158992}
+
     # data = {
     #     "code": 200,
     #     "data": [
     #         {
-    #             "id": 1,
+    #             "id": 0,
     #             "username": "admin",
     #             "level": "boss"
     #         },
@@ -36,6 +41,7 @@ if __name__ == '__main__':
     #         }
     #     ]
     # }
+    print(jsonpath(data, [], first=True, default='ff'))
     # clear_value(data, 'admin')
     # print(format_json(data))
 

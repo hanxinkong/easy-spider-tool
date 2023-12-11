@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="011eb65d-9d98-4289-ae30-1ce376e4739a" name="Changes" comment="更新说明文档">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/easy_spider_tool/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/easy_spider_tool/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easy_spider_tool/date.py" beforeDir="false" afterPath="$PROJECT_DIR$/easy_spider_tool/date.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -162,7 +160,8 @@
       <workItem from="1692454219539" duration="15168000" />
       <workItem from="1695206438339" duration="843000" />
       <workItem from="1696820913419" duration="1821000" />
-      <workItem from="1699510534573" duration="761000" />
+      <workItem from="1699510534573" duration="1693000" />
+      <workItem from="1701310190702" duration="777000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1692542949804</created>
@@ -213,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696822977858</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="更新说明文档">
+      <created>1699511498801</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1699511498801</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
