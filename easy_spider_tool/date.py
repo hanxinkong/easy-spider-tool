@@ -235,9 +235,13 @@ def current_date(is_fmt: bool = True, scheme: str = None) -> FmtDate:
     return cur_time
 
 
-def timestamp(ms: bool = False) -> int:
+def timestamp(obj: FmtDate = None, ms: bool = False) -> int:
     """当前时间戳生成，默认秒，可选毫秒"""
-    cur_time = current_date(is_fmt=False).timestamp()
+    if obj is None:
+        cur_time = current_date(is_fmt=False).timestamp()
+    else:
+        cur_time = date_parse(obj, default_time_scheme=None, is_fmt=False).timestamp()
+
     if ms:
         cur_time = cur_time * 1000
 
