@@ -70,6 +70,4 @@ def is_format_json(wait_json_string: str) -> bool:
             return True
     except json.JSONDecodeError:
         pass
-    except Exception:
-        pass
     return False

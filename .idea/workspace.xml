@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="011eb65d-9d98-4289-ae30-1ce376e4739a" name="Changes" comment="修复jsons模块下is_format_json方法，值类似为“1”的情况下识别为json格式的bug">
-      <change afterPath="$PROJECT_DIR$/.pypirc" afterDir="false" />
+    <list default="true" id="011eb65d-9d98-4289-ae30-1ce376e4739a" name="Changes" comment="1.修改了date模块下timestamp方法部分功能&#10;2.修改了jsons模块下jsonpath方法部分功能">
       <change beforePath="$PROJECT_DIR$/.idea/easy-spider-tool.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/easy-spider-tool.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easy_spider_tool/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/easy_spider_tool/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easy_spider_tool/date.py" beforeDir="false" afterPath="$PROJECT_DIR$/easy_spider_tool/date.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easy_spider_tool/jsons.py" beforeDir="false" afterPath="$PROJECT_DIR$/easy_spider_tool/jsons.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,22 +37,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Work/Study/easy-spider-tool&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/Work/Study/easy-spider-tool-document",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Work\Study\easy-spider-tool" />
@@ -171,6 +165,7 @@
       <workItem from="1702895403384" duration="1491000" />
       <workItem from="1703475861760" duration="1318000" />
       <workItem from="1704956948990" duration="2541000" />
+      <workItem from="1715148568993" duration="3424000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1692542949804</created>
@@ -242,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702290734585</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="1.修改了date模块下timestamp方法部分功能&#10;2.修改了jsons模块下jsonpath方法部分功能">
+      <created>1715150298374</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1715150298374</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,7 +294,8 @@
     <MESSAGE value="日期功能current_date新增默认时间格式" />
     <MESSAGE value="更新说明文档" />
     <MESSAGE value="修复jsons模块下is_format_json方法，值类似为“1”的情况下识别为json格式的bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复jsons模块下is_format_json方法，值类似为“1”的情况下识别为json格式的bug" />
+    <MESSAGE value="1.修改了date模块下timestamp方法部分功能&#10;2.修改了jsons模块下jsonpath方法部分功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.修改了date模块下timestamp方法部分功能&#10;2.修改了jsons模块下jsonpath方法部分功能" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/simple_spider_tool$date.coverage" NAME="date Coverage Results" MODIFIED="1686032839402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/simple_spider_tool" />
