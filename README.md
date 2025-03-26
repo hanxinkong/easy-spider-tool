@@ -69,8 +69,4 @@ print(format_json(all_user_info))
 
 Github：https://github.com/hanxinkong/easy-spider-tool
 
-在线文档：https://easy-spider-tool.xink.top/
-
 ## 注明
-
-该工具借鉴作者【xingcweb】,根据主观新增部分功能
